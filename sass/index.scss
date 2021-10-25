@@ -1,0 +1,55 @@
+/* Math */
+@use "sass:math";
+
+
+
+/* Variables & function */
+@import "functions";
+@import "variables";
+
+/* Base & layout */
+@import "resets";
+@import "breakpoints";
+@import "grid";
+@import "error";
+
+/* Colors */
+@import "classGenerator";
+
+/* Component (button, card, sections) */
+@import "./components/card";
+@import "./components/button";
+
+/* Utilities */
+@import "utilities";
+
+
+
+/* Local */
+.Body {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.Header {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: math.div($base-border-radius, 4);
+    background-color: lightgreen;
+}
+
+.List {
+    width: 300px;
+    padding: 10px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 1px solid black;
+    border-radius: math.div($base-border-radius, 4);
+    list-style-type: none;
+    background-color: lightpink;
+}

@@ -1,0 +1,13 @@
+%error {
+    border: 1px solid #f00;
+    background-color: #fdd;
+}
+
+.error-message {
+    @extend %error;
+  
+    &-serious {
+      @extend %error;
+      border-width: 3px;
+    }
+  }

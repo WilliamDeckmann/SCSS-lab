@@ -1,0 +1,390 @@
+/* Math */
+/* Variables & function */
+/* Colors */
+/* Font size */
+/* Padding & margin */
+/* Border radius */
+/* Base & layout */
+body {
+  padding: 0;
+  margin: 0;
+}
+
+@media (min-width: 0) {
+  .responsive-test {
+    color: red;
+  }
+}
+@media (min-width: 480px) {
+  .responsive-test {
+    color: blue;
+  }
+}
+@media (min-width: 720px) {
+  .responsive-test {
+    color: green;
+  }
+}
+@media (min-width: 960px) {
+  .responsive-test {
+    color: purple;
+  }
+}
+@media (min-width: 1200px) {
+  .responsive-test {
+    color: orange;
+  }
+}
+@media (min-width: 1400px) {
+  .responsive-test {
+    color: pink;
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.gap-1 > * {
+  padding: 10px;
+}
+
+.gap-1 {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.justify-center {
+  justify-content: "center";
+}
+
+@media (min-width: 0) {
+
+  .col-12-xs {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 100%;
+  }
+}
+@media (min-width: 480px) {
+
+  .col-5-sm {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 41.6666666667%;
+  }
+}
+@media (min-width: 1200px) {
+
+  .col-3-xl {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 25%;
+  }
+}
+.error-message-serious, .error-message {
+  border: 1px solid #f00;
+  background-color: #fdd;
+}
+
+.error-message-serious {
+  border-width: 3px;
+}
+
+/* Colors */
+/* For each */
+.Item-one {
+  color: blue;
+}
+
+.Item-hover-one:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
+/* For light */
+
+.Item-one-light-2 {
+  color: #3333ff;
+}
+
+.Item-hover-one-light-2:hover {
+  color: #3333ff;
+  text-decoration: underline;
+}
+
+/* For dark */
+
+.Item-one-dark-2 {
+  color: #0000cc;
+}
+
+.Item-hover-one-dark-2:hover {
+  color: #0000cc;
+  text-decoration: underline;
+}
+
+.Item-two {
+  color: green;
+}
+
+.Item-hover-two:hover {
+  color: green;
+  text-decoration: underline;
+}
+
+/* For light */
+
+.Item-two-light-2 {
+  color: #339933;
+}
+
+.Item-hover-two-light-2:hover {
+  color: #339933;
+  text-decoration: underline;
+}
+
+/* For dark */
+
+.Item-two-dark-2 {
+  color: #006600;
+}
+
+.Item-hover-two-dark-2:hover {
+  color: #006600;
+  text-decoration: underline;
+}
+
+.Item-three {
+  color: red;
+}
+
+.Item-hover-three:hover {
+  color: red;
+  text-decoration: underline;
+}
+
+/* For light */
+
+.Item-three-light-2 {
+  color: #ff3333;
+}
+
+.Item-hover-three-light-2:hover {
+  color: #ff3333;
+  text-decoration: underline;
+}
+
+/* For dark */
+
+.Item-three-dark-2 {
+  color: #cc0000;
+}
+
+.Item-hover-three-dark-2:hover {
+  color: #cc0000;
+  text-decoration: underline;
+}
+
+.Item-four {
+  color: white;
+}
+
+.Item-hover-four:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.Item-five {
+  color: black;
+}
+
+.Item-hover-five:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+/* Component (button, card, sections) */
+/* Math */
+/* Article */
+.card {
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: lightblue;
+}
+.card .Text {
+  color: purple;
+}
+.card .Text .Link {
+  color: yellow;
+  text-decoration: underline;
+}
+
+.btn-one {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 40px;
+  border: none;
+  background-color: blue;
+  color: grey;
+}
+.btn-one:hover {
+  background-color: #1a1aff;
+  color: black;
+}
+
+.btn-two {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 40px;
+  border: none;
+  background-color: green;
+  color: grey;
+}
+.btn-two:hover {
+  background-color: #009a00;
+  color: black;
+}
+
+.btn-outlined-two {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 40px;
+  border: none;
+  background-color: pink;
+  color: grey;
+  border: 1px solid green;
+  color: green;
+}
+.btn-outlined-two:hover {
+  background-color: green;
+  color: gray;
+}
+
+.btn-three {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 40px;
+  border: none;
+  background-color: red;
+  color: grey;
+}
+.btn-three:hover {
+  background-color: #ff1a1a;
+  color: black;
+}
+
+.btn-complement-three {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 40px;
+  border: none;
+  background-color: red;
+  color: grey;
+  color: #1affff;
+}
+.btn-complement-three:hover {
+  color: red;
+  background-color: #1affff;
+}
+
+.btn-four {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 40px;
+  border: none;
+  background-color: white;
+  color: grey;
+}
+.btn-four:hover {
+  background-color: white;
+  color: black;
+}
+
+.btn-five {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 40px;
+  border: none;
+  background-color: black;
+  color: grey;
+}
+.btn-five:hover {
+  background-color: #0d0d0d;
+  color: black;
+}
+
+/* Utilities */
+
+.mt-4 {
+  margin-top: 4.5rem;
+}
+
+.mb-4 {
+  margin-bottom: 4.5rem;
+}
+
+.font-sm {
+  font-size: 0.5em;
+}
+
+.font-md {
+  font-size: 1em;
+}
+
+.font-lg {
+  font-size: 1.25em;
+}
+
+/* Local */
+.Body {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.Header {
+  width: 300px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: lightgreen;
+}
+
+.List {
+  width: 300px;
+  padding: 10px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  list-style-type: none;
+  background-color: lightpink;
+}

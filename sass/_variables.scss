@@ -1,0 +1,29 @@
+/* Colors */
+$blue: blue !default;
+$green: green !default;
+$red: red !default;
+$white: white !default;
+$black: black !default;
+
+$colors: (
+    "one": $blue,
+    "two": $green,
+    "three": $red,
+    "four": $white,
+    "five": $black
+);
+
+/* Font size */
+$base-font-size: 1em;
+$font-size-sm: $base-font-size * 0.5;
+$font-size-md: $base-font-size;
+$font-size-lg: $base-font-size * 1.25;
+$font-size-xl: $base-font-size * 1.5;
+$font-size-xxl: $base-font-size * 1.75;
+
+/* Padding & margin */
+$base-padding: 0.75rem;
+$base-margin: 0.75rem;
+
+/* Border radius */
+$base-border-radius: 40px;

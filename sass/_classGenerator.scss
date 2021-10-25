@@ -1,0 +1,45 @@
+/* For each */
+@each $key, $val in $colors {
+    .Item-#{$key} {
+        color: $val;
+    }
+
+    .Item-hover-#{$key} {
+        &:hover {
+            color: $val;
+            text-decoration: underline;
+        }
+    }
+
+    @if($val != white and $val != black) {
+        
+        /* For light */
+        @for $i from 1 through 3 {
+            .Item-#{$key}-light-#{$i} {
+                color: mix(white, $val, $i * 10);
+            }
+
+            .Item-hover-#{$key}-light-#{$i} {
+                &:hover {
+                    color: mix(white, $val, $i * 10);
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        /* For dark */
+        @for $i from 1 through 3 {
+            .Item-#{$key}-dark-#{$i} {
+                color: mix(black, $val, $i * 10);
+            }
+
+            .Item-hover-#{$key}-dark-#{$i} {
+                &:hover {
+                    color: mix(black, $val, $i * 10);
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
